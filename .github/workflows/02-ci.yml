@@ -4,7 +4,9 @@ name: CI
 env:
   APP_NAME: fastapi-starter
 
-on: [push]
+on:
+  push:
+  pull_request:
 
 jobs:
   lint:
@@ -33,6 +35,12 @@ jobs:
             echo "Branch: ${{ github.ref_name }}"
             echo "Commit SHA: ${{ github.sha }}"
             echo "Runner OS: ${{ runner.os }}"
+
+      - name: Display PR contexts
+        run: |
+            echo "Event: ${{ github.event_name }}"
+            echo "Head branch: ${{ github.head_ref }}"
+            echo "Base branch: ${{ github.base_ref }}"
 
   build:
     name: Build – Vérifier l’application
