@@ -39,6 +39,8 @@ jobs:
             echo "Event: ${{ github.event_name }}"
             echo "Head branch: ${{ github.head_ref }}"
             echo "Base branch: ${{ github.base_ref }}"
+      - name: Display GitHub context
+        run: echo '${{ toJson(github) }}'
 
   build:
     name: Build – Vérifier l’application
