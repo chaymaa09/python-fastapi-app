@@ -74,7 +74,7 @@ jobs:
           echo "Target environment: ${{ inputs.environment }}"
 
   call-greeting:
-    uses: ./.github/workflows/greeting.yml
+    uses: ./.github/workflows/greetings.yml
     with:
       recipient: ${{ inputs.environment }}
 
