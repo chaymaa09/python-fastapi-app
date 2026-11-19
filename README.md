@@ -2,6 +2,9 @@
 
 A minimal, production‑leaning FastAPI template with testing (coverage), linting/formatting, Docker, and CI. Ships with a root endpoint and a health check.
 
+## Fork
+This is just a fork of the original FastAPI Starter template. The original template can be found [here](mrlabied/python-fastapi-app)
+
 ## Features
 - FastAPI + Uvicorn
 - Pydantic Settings for configuration management
