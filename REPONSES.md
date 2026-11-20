@@ -21,3 +21,11 @@ actions/checkout fonctionne avec des valeurs par défaut pertinentes, alors que 
 
 ## Q2
 Car chaque job s'exécute dans un environnement d'exécution indépendant, alors les fichiers créés dans le job build ne sont donc pas automatiquement disponibles dans le job verify  donc il faut utiliser upload-artifact pour sauvegarder le fichier et download-artifact pour le récupérer dans l'autre job.  
+
+## Q6
+Une action locale est stockée dans le dépôt GitHub et pour pouvoir l'utiliser, ses fichiers doivent être présents dans l'espace de travail de la machine virtuelle.
+Alors actions/checkout permet de récupérer le contenu du dépôt et donc de rendre accessible le fichier .github/actions/build-info/action.yml.
+
+## Q7
+chaque step utilisant run doit préciser explicitement le shell à utiliser.
+Cela permet à GitHub Actions de savoir avec quel interpréteur exécuter les commandes.
