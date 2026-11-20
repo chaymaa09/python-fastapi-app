@@ -60,4 +60,5 @@ jobs:
       - name: Run Docker hello action
         uses: ./.github/actions/docker-hello
         with:
-          who: Chaymaa
+          who: chaymaa04
+
