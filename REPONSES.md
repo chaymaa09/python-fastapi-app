@@ -46,3 +46,10 @@ Les combinaisons sont :
 
 ## Q3
 Si on tente d'exclure Python 3.14 dans exclude, cette exclusion ne supprimera pas la combinaison ajoutée par include car GitHub Actions applique exclude avant include. La combinaison Python 3.14 sera donc ajoutée après l'exclusion.
+
+## Q4
+- Avec fail-fast= true : 
+un seul job a échoué : Ubuntu avec Python 3.13. 
+Les cinq autres jobs ont été annulés à la suite de cet échec. Aucun job n'a été marqué comme réussi sur cette exécution.
+
+- Avec fail-fast= false :
