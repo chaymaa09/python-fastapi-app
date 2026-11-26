@@ -1,4 +1,4 @@
-name: include-specific-matrix
+name: include-specific-proprety
 on: workflow_dispatch
 
 jobs:
