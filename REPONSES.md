@@ -40,3 +40,9 @@ Les combinaisons sont :
 - Windows / Python 3.11
 - Windows / Python 3.12
 - Windows / Python 3.13
+
+## Q2
+6 jobs au total, les 6 combinaisons initiales moins la combinaison Windows/Python 3.11, puis ajout de Ubuntu/Python 3.14.
+
+## Q3
+Si on tente d'exclure Python 3.14 dans exclude, cette exclusion ne supprimera pas la combinaison ajoutée par include car GitHub Actions applique exclude avant include. La combinaison Python 3.14 sera donc ajoutée après l'exclusion.
