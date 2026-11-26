@@ -53,3 +53,9 @@ un seul job a échoué : Ubuntu avec Python 3.13.
 Les cinq autres jobs ont été annulés à la suite de cet échec. Aucun job n'a été marqué comme réussi sur cette exécution.
 
 - Avec fail-fast= false :
+2 jobs ont échoué : windows avec Python 3.13 et Windows avec Python 3.12. les jobs ubuntu ont réussi. 
+Donc 4 jobs ont été marqués comme réussis sur cette exécution.
+
+lorsque l'objectif est d'arrêter les traitements dès qu'une erreur importante apparaît pour gagner du temps et de réduire les coûts d'exécution, fail-fast: truepermet à annuler les autres jobs de la matrice qui sont encore en cours ou en attente dès qu'un job échoue.
+pour les tests de compatibilité multi-plateformes et diagnostics complets sur toutes les configurations, fail-fast:false permet aux jobs continuent leur exécution, même si certains échouent.
+
