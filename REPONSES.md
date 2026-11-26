@@ -29,3 +29,14 @@ Alors actions/checkout permet de récupérer le contenu du dépôt et donc de re
 ## Q7
 chaque step utilisant run doit préciser explicitement le shell à utiliser.
 Cela permet à GitHub Actions de savoir avec quel interpréteur exécuter les commandes.
+
+# Réponses aux questions du TP-08
+## Q1
+la matrice combine 2 systèmes d'exploitation avec 3 versions de Python, ce qui donne 6 combinaisons possibles. Donc 6 jobs seront créés et exécutés en parallèle.
+Les combinaisons sont :
+- Ubuntu / Python 3.11
+- Ubuntu / Python 3.12
+- Ubuntu / Python 3.13
+- Windows / Python 3.11
+- Windows / Python 3.12
+- Windows / Python 3.13
